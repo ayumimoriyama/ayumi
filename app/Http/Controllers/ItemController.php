@@ -122,7 +122,6 @@ class ItemController extends Controller
     $item->town = $request->town;
     $item->building = $request->building;
     $item->detail = $request->detail;
-    $item->save();
 
     return redirect('/index');
     }

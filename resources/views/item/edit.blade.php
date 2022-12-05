@@ -49,7 +49,7 @@
                             <label for="city" class="col-md-4 col-form-label text-md-right">{{ __('City') }}</label>
 
                             <div class="col-md-6">
-                                <input id="city" type="text" class="form-control @error('city') is-invalid @enderror" name="city" value="{{ old('city') }}" autocomplete="city" placeholder="広島市中区">
+                                <input value='{{$item->city}}' name='city' type="input" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
 
                                 @error('city')
                                     <span class="invalid-feedback" role="alert">
@@ -63,7 +63,7 @@
                             <label for="town" class="col-md-4 col-form-label text-md-right">{{ __('Town') }}</label>
 
                             <div class="col-md-6">
-                                <input id="town" type="text" class="form-control @error('town') is-invalid @enderror" name="town" value="{{ old('town') }}" autocomplete="town" placeholder="基町1丁目1-1">
+                            <input value='{{$item->town}}' name='town' type="input" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
 
                                 @error('town')
                                     <span class="invalid-feedback" role="alert">
@@ -77,7 +77,7 @@
                             <label for="building" class="col-md-4 col-form-label text-md-right">{{ __('Building') }}</label>
 
                             <div class="col-md-6">
-                                <input id="building" type="text" class="form-control @error('bilding') is-invalid @enderror" name="building" value="{{ old('building') }}" autocomplete="building" placeholder="基町○○ビル101号室">
+                            <input value='{{$item->building}}' name='building' type="input" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
 
                                 @error('building')
                                     <span class="invalid-feedback" role="alert">

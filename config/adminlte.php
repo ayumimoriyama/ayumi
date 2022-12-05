@@ -227,14 +227,14 @@ return [
     'menu' => [
         [
             'text' => 'ゆるキャラ一覧',
-            'url'  => 'items',
+            'url'  => 'index',
             'icon' => 'fas fa-gamepad',
         ],
 
         [
             'text' => '島根県',
             'url'  => 'shimane',
-            'icon' => 'IMG_0179.PNG',
+            'icon' => 'images/しまねっこ.png',
         ],
 
         // AdminLTEデフォルト
