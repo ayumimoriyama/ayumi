@@ -7,3 +7,4 @@
 @stop  
 
 @section('content')
+<img src="images/あっぱれくんとしじみ姫.png" alt=''>
