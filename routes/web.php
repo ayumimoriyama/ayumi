@@ -32,6 +32,7 @@ Auth::routes();
     Route::post('/UserEdit/{id}', [App\Http\Controllers\ItemController::class, 'UserEdit'])->name('user.update');
 
     Route::get('/shimane', [App\Http\Controllers\ShimaneController::class, 'shimane'])->name('map');
+    Route::get('/shimanekko', [App\Http\Controllers\ShimaneController::class, 'shimanekko']);
 
     Route::get('/matsue', [App\Http\Controllers\ShimaneController::class, 'matsue']);
     Route::get('/yasugi', [App\Http\Controllers\ShimaneController::class, 'yasugi']);

@@ -2,8 +2,21 @@
 
 @section('title', '島根県ゆるキャラ一覧')
 
+<style>
+    .caracter-header-title a {
+        display: block;
+    }
+    .caracter-header-title {
+        display: flex;
+        justify-content: space-between;
+    }
+</style>
+
 @section('content_header')
+<div class="caracter-header-title">
     <h1>島根県ゆるキャラ一覧</h1>
+    <a href="{{ url('/shimanekko') }}">>>島根県代表！！しまねっこ</a>
+</div>
 @stop  
 
 @section('content')
@@ -73,7 +86,8 @@ document.getElementById( "target" ).addEventListener( "click", function( event )
     console.log(x);
     console.log(y);
     if(x>661.5 && x<851.5 && y>21.5 && y<116.5){ //松江市
-        window.open('http://127.0.0.1:8000/matsue','_blank'); 
+        window.location.href ='http://127.0.0.1:8000/matsue'; 
+        return false
     }
     else if(x>709.5 && x<821.5 && y>165.5 && y<210.5){ //安来市
         window.open('http://127.0.0.1:8000/yasugi','_blank');
