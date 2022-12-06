@@ -9,5 +9,6 @@
 @section('content')
 <img src="images/オオナン・ショウ.png" alt=''>
 <h5>オオナン・ショウ</h5>
+<p class="project-link"><a href="https://www.town.ohnan.lg.jp/www/index.html" target="_blank">邑南町のホームページ</a></p>
 
 @stop

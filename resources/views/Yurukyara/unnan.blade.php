@@ -9,5 +9,6 @@
 @section('content')
 <img src="images/雲南吉田くん.png" alt=''>
 <h5>雲南吉田くん</h5>
+<p class="project-link"><a href="https://www.city.unnan.shimane.jp/unnan/" target="_blank">雲南市のホームページ</a></p>
 
 @stop

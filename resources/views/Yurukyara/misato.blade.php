@@ -7,7 +7,8 @@
 @stop  
 
 @section('content')
-<img src="images/みさ坊.png" alt=''>
+<img src="images/みさ坊.png" alt='' width="300px">
 <h5>みさ坊</h5>
+<p class="project-link"><a href="https://www.town.shimane-misato.lg.jp/" target="_blank">美郷町のホームページ</a></p>
 
 @stop

@@ -7,7 +7,8 @@
 @stop  
 
 @section('content')
-<img src="images/ごんごんじい.png" alt=''>
+<img src="images/ごんごんじい.png" alt='' width="300px">
 <h5>ごんごんじい</h5>
+<p class="project-link"><a href="https://www.town.yoshika.lg.jp/index.html" target="_blank">吉賀町のホームページ</a></p>
 
 @stop

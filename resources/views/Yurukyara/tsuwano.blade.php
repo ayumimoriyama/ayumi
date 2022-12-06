@@ -9,5 +9,6 @@
 @section('content')
 <img src="images/つわみん.png" alt=''>
 <h5>つわみん</h5>
+<p class="project-link"><a href="http://www.town.tsuwano.lg.jp/" target="_blank">津和野町のホームページ</a></p>
 
 @stop

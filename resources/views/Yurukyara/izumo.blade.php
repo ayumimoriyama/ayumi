@@ -12,5 +12,6 @@
 <p></p>
 <img src="images/おんすうふらたろう.png" alt=''>
 <h5>おんすうふらたろう</h5>
+<p class="project-link"><a href="https://www.city.izumo.shimane.jp/www/toppage/0000000000000/APM03000.html" target="_blank">出雲市のホームページ</a></p>
 
 @stop

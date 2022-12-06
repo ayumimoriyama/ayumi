@@ -9,5 +9,6 @@
 @section('content')
 <img src="images/なみちゃん.png" alt=''>
 <h5>なみちゃん</h5>
+<p class="project-link"><a href="https://www.city.hamada.shimane.jp/www/index.html" target="_blank">浜田市のホームページ</a></p>
 
 @stop
