@@ -9,3 +9,5 @@
 @section('content')
 <img src="images/やがみちゃん.png" alt=''>
 <img src="images/おんすうふらたろう.png" alt=''>
+
+@stop

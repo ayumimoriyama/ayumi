@@ -8,3 +8,5 @@
 
 @section('content')
 <img src="images/雲南吉田くん.png" alt=''>
+
+@stop

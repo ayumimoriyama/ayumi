@@ -8,3 +8,5 @@
 
 @section('content')
 <img src="images/人麻呂くんとよさみ姫.png" alt=''>
+
+@stop

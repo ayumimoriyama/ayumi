@@ -11,11 +11,11 @@
 <img src="images/shimanemap.png" alt='' useMap="#ShimaneMap" width="860px" id="target">
 <map name="ShimaneMap"> 
 
-<!-- <area alt="松江市" coords="1027,252,1048,267,1052,279,1063,278,1065,274,1068,274,1069,281,1077,280,1078,276,1084,283,1108,283,1128,292,1120,297,1072,295,1062,300,1051,293,1030,311,1033,324,1032,332,1027,337,1032,345,1040,343,1043,343,1034,361,1033,369,961,395,980,370,934,365,930,356,917,358,916,356,910,352,918,336,992,324,989,317,960,304,934,305,932,281,970,282,967,274,977,272,986,279,997,271,991,278,1006,262,1026,262,1027,252" shape="poly" href="https://www.city.matsue.shimane.jp/" target="_blank">
+<!-- <area alt="松江市" coords="" shape="poly" href="https://www.city.matsue.shimane.jp/" target="_blank">
 
 <area alt="安来市" coords="" shape="poly" href="https://www.city.yasugi.shimane.jp/" target="_blank">
 
-<area alt="奥出雲町" coords="305,92,333,100,333,110,345,114,346,126,335,132,330,145,323,140,311,142,304,132,294,133,285,126,286,124,289,125,290,116,295,116,299,114,299,106,299,103,304,102" shape="poly" href="https://www.town.okuizumo.shimane.jp/" target="_blank">
+<area alt="奥出雲町" coords="" shape="poly" href="https://www.town.okuizumo.shimane.jp/" target="_blank">
 
 <area alt="雲南市" coords="326,96,306,93,305,100,298,102,299,113,296,116,290,114,288,123,284,125,275,125,274,122,267,121,267,116,257,117,250,111,249,102,255,101,265,90,276,77,285,74,285,71,291,71,296,58,308,64,328,65" shape="poly" href="https://www.city.unnan.shimane.jp/unnan/" target="_blank">
 
@@ -73,61 +73,61 @@ document.getElementById( "target" ).addEventListener( "click", function( event )
     console.log(x);
     console.log(y);
     if(x>661.5 && x<851.5 && y>21.5 && y<116.5){ //松江市
-        window.open('https://www.city.matsue.shimane.jp/','_blank'); 
+        window.open('http://127.0.0.1:8000/matsue','_blank'); 
     }
     else if(x>709.5 && x<821.5 && y>165.5 && y<210.5){ //安来市
-        window.open('https://www.city.yasugi.shimane.jp/','_blank');
+        window.open('http://127.0.0.1:8000/yasugi','_blank');
     }
     else if(x>609.5 && x<746.5 && y>236.5 && y<310.5){ //奥出雲町
-        window.open('https://www.town.okuizumo.shimane.jp/','_blank');
+        window.open('http://127.0.0.1:8000/okuizumo','_blank');
     }
-    else if(x>533.5 && x<705.5 && y>125.5 && y<199.5){ //雲南市
-        window.open('https://www.city.unnan.shimane.jp/unnan/','_blank');
+    else if(x>570.5 && x<640.5 && y>201.5 && y<249.5){ //雲南市
+        window.open('http://127.0.0.1:8000/unnan','_blank');
     }
-    else if(x>496.5 && x<636.5 && y>50.5 && y<124.5){ //出雲市
-        window.open('https://www.city.izumo.shimane.jp/www/toppage/0000000000000/APM03000.html','_blank');
+    else if(x>496.5 && x<636.5 && y>50.5 && y<200.5){ //出雲市
+        window.open('http://127.0.0.1:8000/izumo','_blank');
     }
     else if(x>355.5 && x<493.5 && y>149.5 && y<227.5){ //大田市
-        window.open('https://www.city.oda.lg.jp/','_blank');
+        window.open('http://127.0.0.1:8000/ohda','_blank');
     }
     else if(x>530.5 && x<589.5 && y>253.5 && y<335.5){ //飯南町
-        window.open('http://www.iinan.jp/','_blank');
+        window.open('http://127.0.0.1:8000/iinan','_blank');
     }
     else if(x>455.5 && x<492.5 && y>252.5 && y<342.5){ //美郷町
-        window.open('https://www.town.shimane-misato.lg.jp/','_blank');
+        window.open('http://127.0.0.1:8000/misato','_blank');
     }
     else if(x>405.5 && x<433.5 && y>271.5 && y<311.5){ //川本町
-        window.open('http://www.town.shimane-kawamoto.lg.jp/','_blank');
+        window.open('http://127.0.0.1:8000/kawamoto','_blank');
     }
     else if(x>365.5 && x<475.5 && y>322.5 && y<402.5){ //邑南町
-        window.open('https://www.town.ohnan.lg.jp/www/index.html','_blank');
+        window.open('http://127.0.0.1:8000/ohnan','_blank');
     }
     else if(x>308.5 && x<354.5 && y>235.5 && y<304.5){ //江津市
-        window.open('https://www.city.gotsu.lg.jp/','_blank');
+        window.open('http://127.0.0.1:8000/gotsu','_blank');
     }
     else if(x>135.5 && x<266.5 && y>271.5 && y<407.5){ //浜田市
-        window.open('https://www.city.hamada.shimane.jp/www/index.html','_blank');
+        window.open('http://127.0.0.1:8000/hamada','_blank');
     }
     else if(x>31.5 && x<242.5 && y>353.5 && y<436.5){ //益田市
-        window.open('https://www.city.masuda.lg.jp/','_blank');
+        window.open('http://127.0.0.1:8000/masuda','_blank');
     }
     else if(x>6.5 && x<111.5 && y>436.5 && y<499.5){ //津和野町
-        window.open('http://www.town.tsuwano.lg.jp/','_blank');
+        window.open('http://127.0.0.1:8000/tsuwano','_blank');
     }
     else if(x>30.5 && x<133.5 && y>502.5 && y<604.5){ //吉賀町
-        window.open('https://www.town.yoshika.lg.jp/index.html','_blank');
+        window.open('http://127.0.0.1:8000/yoshika','_blank');
     }
     else if(x>234.5 && x<322.5 && y>7.5 && y<108.5){ //隠岐の島町
-        window.open('https://www.town.okinoshima.shimane.jp/www/index.html','_blank');
+        window.open('http://127.0.0.1:8000/okinoshima','_blank');
     }
     else if(x>114.5 && x<181.5 && y>92.5 && y<125.5){ //西ノ島町
-        window.open('http://www.town.nishinoshima.shimane.jp/','_blank');
+        window.open('http://127.0.0.1:8000/nishinoshima','_blank');
     }
     else if(x>165.5 && x<197.5 && y>112.5 && y<150.5){ //海士町
-        window.open('http://www.town.ama.shimane.jp/','_blank');
+        window.open('http://127.0.0.1:8000/ama','_blank');
     }
     else if(x>131.5 && x<147.5 && y>148.5 && y<175.5){ //知夫村
-        window.open('http://www.vill.chibu.lg.jp/','_blank');
+        window.open('http://127.0.0.1:8000/chibu','_blank');
     }
 } ) ;
 </script>
