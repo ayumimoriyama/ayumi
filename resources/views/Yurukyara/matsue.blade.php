@@ -7,6 +7,7 @@
 @stop  
 
 @section('content')
-<img src="images/あっぱれくんとしじみ姫.png" alt=''>
+<img src="images/あっぱれくんとしじみ姫.png" alt='' >
+<h5>あっぱれくんとしじみ姫</h5>
 
 @stop

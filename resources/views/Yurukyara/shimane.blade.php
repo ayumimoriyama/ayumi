@@ -84,7 +84,7 @@ document.getElementById( "target" ).addEventListener( "click", function( event )
     else if(x>570.5 && x<640.5 && y>201.5 && y<249.5){ //雲南市
         window.open('http://127.0.0.1:8000/unnan','_blank');
     }
-    else if(x>496.5 && x<636.5 && y>50.5 && y<200.5){ //出雲市
+    else if(x>496.5 && x<623.5 && y>50.5 && y<150.5){ //出雲市
         window.open('http://127.0.0.1:8000/izumo','_blank');
     }
     else if(x>355.5 && x<493.5 && y>149.5 && y<227.5){ //大田市

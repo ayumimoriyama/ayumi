@@ -8,5 +8,6 @@
 
 @section('content')
 <img src="images/オオナン・ショウ.png" alt=''>
+<h5>オオナン・ショウ</h5>
 
 @stop

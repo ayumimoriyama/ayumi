@@ -8,5 +8,5 @@
 
 @section('content')
 <img src="images/すさのおくんといなたひめちゃん.png" alt=''>
-
+<h5>すさのおくんといなたひめちゃん</h5>
 @stop
