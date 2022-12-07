@@ -27,7 +27,7 @@ class ItemController extends Controller
         $items = Item
             //::where('items.status', 'active')
             ::select()
-            ->get();
+            ->paginate(20);
 
         return view('item.index', compact('items'));
     }
@@ -124,5 +124,36 @@ class ItemController extends Controller
     $item->detail = $request->detail;
 
     return redirect('/index');
+    }
+
+    public function item(Request $request){
+        //商品一覧表示
+        //一覧をページネートで取得
+        // $items = Item::Paginate(20);
+        // 検索で入力された値を取得
+        $keyword = $request->input('keyword');
+        $sortBy = $request->input('sort');
+        $direction = $request->input('direction');
+        // クエリを作成
+        $query = Item::query();
+        
+        // もし検索フォームにキーワードが入力されたら
+        if(!empty($keyword)) {
+            $query->where('name','Like','%'.$keyword.'%')
+            ->orWhere('postcode','Like','%'.$keyword.'%')
+            ->orWhere('pref_id','Like','%'.$keyword.'%')
+            ->orWhere('city','Like','%'.$keyword.'%')
+            ->orWhere('town','Like','%'.$keyword.'%')
+            ->orWhere('building','Like','%'.$keyword.'%')
+            ->orWhere('detail','Like','%'.$keyword.'%');
+        }
+        
+        if(!empty($sortBy)){
+            $orderBy = $direction ? $direction : 'asc';
+            $query->orderBy($sortBy,$orderBy );
+        }
+
+        $items = $query->paginate(20);
+        return view('item.index',compact('items','keyword'));
     }
 }

@@ -5,6 +5,14 @@
 <style>
     .caracter-header-title a {
         display: block;
+        margin: 5px;
+        font-size: 1.3rem;       
+    }
+
+    .caracter-header-title a:hover {
+        color: #9D4C06;
+        font-size: 2em;/*文字サイズ2倍*/
+        font-weight: bold;
     }
     .caracter-header-title {
         display: flex;
@@ -164,5 +172,3 @@ document.getElementById( "target" ).addEventListener( "click", function( event )
 } ) ;
 </script>
 @stop
-
-

@@ -7,6 +7,24 @@
 @stop
 
 @section('content')
+{{-- 検索機能 --}}
+<div class="search container">
+    <form action="{{ url('search') }}" method="GET">
+        @csrf
+        <div class="form-group row row-cols-2">
+            {{-- neme&datail検索フォーム --}}
+            <div class="name.search.form mb-2">
+                <label for="">ゆるキャラ検索</label>
+                <div>
+                    <input class="form-control" type="search" name="keyword" placeholder="入力"
+                    value="@if(isset($keyword)) {{ $keyword }} @endif">
+                    <button type="submit" class="btn btn-info">検索</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
     <div class="row">
         <div class="col-12">
             <div class="card">
@@ -53,6 +71,11 @@
             </div>
         </div>
     </div>
+{{-- 下記のようにページネーターを記述するとページネートで次ページに遷移しても、検索結果を保持する --}}
+{{-- $institutions->appends(request()->query())->links() --}}
+
+{{ $items->links() }}
+
 @stop
 
 @section('css')
