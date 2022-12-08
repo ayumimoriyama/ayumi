@@ -10,10 +10,10 @@
 
 @section('content')
 <div class="izumo-text">
-    <img src="images/やがみちゃん.png" alt=''>
+    <img src="images/やがみちゃん.png" alt='' width="300px">
     <h5>やがみちゃん(斐川町)</h5>
     <p></p>
-    <img src="images/おんすうふらたろう.png" alt=''>
+    <img src="images/おんすうふらたろう.png" alt='' width="500px">
     <h5>おんすうふらたろう(平田町)</h5>
     <p class="project-link"><a href="https://www.city.izumo.shimane.jp/www/toppage/0000000000000/APM03000.html" target="_blank">出雲市のホームページ</a></p>
 </div>
