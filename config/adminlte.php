@@ -234,7 +234,7 @@ return [
         [
             'text' => '島根県',
             'url'  => 'shimane',
-            'icon' => 'images/しまねっこ.png',
+            'icon' => 'fas fa-bus',
         ],
 
         // AdminLTEデフォルト

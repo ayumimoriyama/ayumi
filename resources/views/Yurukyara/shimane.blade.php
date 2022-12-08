@@ -109,7 +109,7 @@ document.getElementById( "target" ).addEventListener( "click", function( event )
         window.location.href='http://127.0.0.1:8000/unnan';
         return false
     }
-    else if(x>496.5 && x<623.5 && y>50.5 && y<150.5){ //出雲市
+    else if(x>523.5 && x<590.5 && y>140.5 && y<195.5){ //出雲市
         window.location.href='http://127.0.0.1:8000/izumo';
         return false
     }
