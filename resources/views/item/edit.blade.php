@@ -33,7 +33,11 @@
                                 <select name="pref_id" id="pref_id" class="form-control @error('pref_id') is-invalid @enderror">
                                     <option value="">-- 選択してください --</option>
                                     @foreach (App\Models\Item::$prefs as $key => $pref)
-                                    <option value="{{ $key }}" @if (old('pref_id') == $key) selected @endif>{{ $pref }}</option>
+                                    @if ($item->pref_id == $key)
+                                    <option value="{{ $key }}" selected>{{ $pref }}</option>
+                                    @else
+                                    <option value="{{ $key }}">{{ $pref }}</option>
+                                    @endif
                                     @endforeach
                                 </select>
 

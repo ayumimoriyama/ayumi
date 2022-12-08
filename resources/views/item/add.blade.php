@@ -84,7 +84,7 @@
                             <label for="building" class="col-md-4 col-form-label text-md-right">{{ __('Building') }}</label>
 
                             <div class="col-md-6">
-                                <input id="building" type="text" class="form-control @error('bilding') is-invalid @enderror" name="building" value="{{ old('building') }}" autocomplete="building" placeholder="基町○○ビル101号室">
+                                <input id="building" type="text" class="form-control @error('building') is-invalid @enderror" name="building" value="{{ old('building') }}" autocomplete="building" placeholder="基町○○ビル101号室">
 
                                 @error('building')
                                     <span class="invalid-feedback" role="alert">
