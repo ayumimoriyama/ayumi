@@ -21,7 +21,7 @@ use function PHPSTORM_META\map;
 
 Auth::routes();
 
-//Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', [App\Http\Controllers\ItemController::class, 'index'])->name('home');
 
     Route::get('/index', [App\Http\Controllers\ItemController::class, 'index'])->name('index');
     Route::get('/search', [App\Http\Controllers\ItemController::class, 'item']);
